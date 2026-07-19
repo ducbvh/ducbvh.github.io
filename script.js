@@ -6,7 +6,7 @@
  * 5) ⌘K command palette — jump to sections / toggle theme / email.
  * All animation is bypassed under prefers-reduced-motion. */
 
-var EMAIL = 'b.vinhhongduc22@gmail.com';
+var EMAIL = 'duc.bvh22@gmail.com';
 
 /* ─── Theme ─── */
 var Theme = (function () {

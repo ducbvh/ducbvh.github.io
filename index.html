@@ -87,7 +87,7 @@
         </div>
         <div class="index-cell">
           <dt>Based</dt>
-          <dd>Vietnam &middot; Remote</dd>
+          <dd>Ho Chi Minh City</dd>
         </div>
         <div class="index-cell">
           <dt>Status</dt>
@@ -100,20 +100,19 @@
     <section class="strip" aria-label="Availability and background">
       <div class="strip__install reveal" style="--i:0">
         <span class="strip__label">Reach me</span>
-        <code class="strip__cmd">b.vinhhongduc22@gmail.com</code>
+        <code class="strip__cmd">duc.bvh22@gmail.com</code>
         <button class="strip__copy" type="button" aria-label="Copy email address">Copy</button>
       </div>
       <div class="strip__trust reveal" style="--i:1">
-        <span class="strip__label">Previously at</span>
+        <span class="strip__label">Worked at</span>
         <ul class="trust">
-          <li>FPT Software</li>
           <li>MoMo</li>
+          <li>FPT Software</li>
         </ul>
       </div>
     </section>
 
-    <!-- ─── Experience · hairline timeline · FPT Software + MoMo ─── -->
-    <!-- PLACEHOLDER: roles, dates and bullets below are invented — replace with your real history -->
+    <!-- ─── Experience · hairline timeline · MoMo · FPT (real) ─── -->
     <section class="exp" id="experience" aria-labelledby="exp-title">
       <header class="sec-head">
         <p class="eyebrow reveal" style="--i:0">Experience</p>
@@ -123,39 +122,40 @@
       <ol class="timeline">
         <li class="tl-item reveal" style="--i:0">
           <div class="tl-when">
-            <span class="tl-years">2023 &mdash; Now</span>
+            <span class="tl-years">2025 &mdash; Now</span>
             <span class="tl-place">MoMo</span>
           </div>
           <div class="tl-what">
-            <h3 class="tl-role">AI Engineer <span class="tl-role-note">/ placeholder title</span></h3>
+            <h3 class="tl-role">AI Engineer</h3>
             <p class="tl-body">
-              Built LLM-powered assistant features and agentic workflows for a
-              super-app serving millions of users &mdash; retrieval, tool orchestration,
-              and evaluation harnesses.
+              Took <strong>Moni</strong> &mdash; MoMo&rsquo;s in-app AI financial assistant &mdash;
+              from prototype to <span class="tl-metric">500K+ monthly active users</span>. A
+              production-grade multi-agent system that reasons, calls real tools over MCP,
+              and grades itself on live traffic.
             </p>
             <ul class="tl-list">
-              <li>Shipped an in-app assistant with tool use over internal APIs</li>
-              <li>Stood up a RAG pipeline + eval loop for answer quality</li>
-              <li>Cut manual support triage time <span class="tl-metric">by ~40%</span> <span class="tl-metric-note">(metric to confirm)</span></li>
+              <li>Architected the multi-agent brain behind Moni &mdash; planning, tool use and retrieval working as one</li>
+              <li>Connected agents to live financial data and tools through the Model Context Protocol (MCP)</li>
+              <li>Shipped an automated <strong>online-eval</strong> loop that scores every response in production &mdash; quality you watch, not guess</li>
             </ul>
           </div>
         </li>
 
         <li class="tl-item reveal" style="--i:1">
           <div class="tl-when">
-            <span class="tl-years">2021 &mdash; 2023</span>
-            <span class="tl-place">FPT Software</span>
+            <span class="tl-years">2023 &mdash; 2025</span>
+            <span class="tl-place">FPT Software &middot; AI Valley</span>
           </div>
           <div class="tl-what">
-            <h3 class="tl-role">Software / ML Engineer <span class="tl-role-note">/ placeholder title</span></h3>
+            <h3 class="tl-role">AI Engineer</h3>
             <p class="tl-body">
-              Delivered ML and backend systems for enterprise clients &mdash; data
-              pipelines, model serving, and the services around them.
+              Built enterprise LLM agents and assistants for e-commerce analytics and
+              internal productivity.
             </p>
             <ul class="tl-list">
-              <li>Built and deployed ML services behind production APIs</li>
-              <li>Owned data pipelines from ingestion to feature store</li>
-              <li>Collaborated across time zones with global client teams</li>
+              <li><strong>Intelligent Data Assistant</strong> &mdash; a multi-agent analytics platform (Text2SQL, Data-Insight, Text2Chart) over BigQuery, orchestrated with LangGraph and a GitLab MCP integration</li>
+              <li><strong>FPT Maya</strong> &mdash; a company-wide AI assistant on Teams &amp; Workplace: answers from internal docs &amp; policies, routes requests with a DistilBERT classifier, and turns voice notes into finished reports</li>
+              <li>Banking training assistant &mdash; cut serving latency <span class="tl-metric">50%</span> (3s &rarr; 1.5s)</li>
             </ul>
           </div>
         </li>
@@ -163,14 +163,14 @@
     </section>
 
     <!-- ─── Selected work · asymmetric grid — one wide flagship + two compact ─── -->
-    <!-- PLACEHOLDER: all three projects are invented — replace names, descriptions, links, metrics -->
+    <!-- Real projects: Moni (MoMo) · Intelligent Data Assistant & FPT Maya (FPT). Internal products — no public links. -->
     <section class="work" id="work" aria-labelledby="work-title">
       <header class="sec-head">
         <p class="eyebrow reveal" style="--i:0">Selected work</p>
-        <h2 class="sec-title reveal" id="work-title" style="--i:1">Agents, assistants, and the plumbing behind them.</h2>
+        <h2 class="sec-title reveal" id="work-title" style="--i:1">Agents and assistants, shipped to production.</h2>
         <p class="sec-lede reveal" style="--i:2">
-          A few things I&rsquo;ve built. Each one is a real system with a job to do &mdash;
-          not a notebook that only runs once.
+          Systems built at MoMo and FPT &mdash; used by real people at scale, not demos
+          that only run once.
         </p>
       </header>
 
@@ -178,43 +178,40 @@
         <article class="proj proj--wide reveal" style="--i:0">
           <span class="proj__num" aria-hidden="true">01</span>
           <div class="proj__text">
-            <p class="proj__kicker">Flagship &middot; agent platform</p>
-            <h3 class="proj__title">Autonomous task agent</h3>
+            <p class="proj__kicker">Flagship &middot; MoMo</p>
+            <h3 class="proj__title">Moni &mdash; AI financial assistant</h3>
             <p class="proj__body">
-              A planning-and-tool-use agent that turns a plain-language task into a
-              sequence of tool calls, checks its own output, and reports back with a
-              full run trace. Built for reliability: retries, guardrails, and eval
-              gates before anything ships.
+              The AI money assistant inside MoMo &mdash; in the hands of <strong>500K+ people
+              every month</strong>. A multi-agent system that plans, calls tools over MCP and
+              retrieves context, then grades itself on live traffic through an online-eval
+              loop. Built to be trusted with real money.
             </p>
             <ul class="proj__tags">
-              <li>LangGraph</li><li>Tool use</li><li>RAG</li><li>Evals</li>
+              <li>Multi-agent</li><li>MCP</li><li>RAG</li><li>Online eval</li><li>500K+ MAU</li>
             </ul>
-            <a class="link-arrow proj__link" href="#" aria-label="Read the case study (placeholder)">Case study <span aria-hidden="true">&#8594;</span></a>
           </div>
         </article>
 
         <article class="proj proj--point reveal" style="--i:1">
           <span class="proj__num" aria-hidden="true">02</span>
-          <h3 class="proj__title">Docs assistant with citations</h3>
+          <h3 class="proj__title">Intelligent Data Assistant</h3>
           <p class="proj__body">
-            A retrieval assistant that answers from a private knowledge base and
-            cites every claim back to the source chunk &mdash; auditable, not just
-            plausible.
+            A conversational analytics platform for e-commerce: ask in plain language,
+            get SQL, insights and charts back. Text2SQL, Data-Insight and Text2Chart
+            agents orchestrated with LangGraph, plus a GitLab MCP integration.
           </p>
-          <ul class="proj__tags"><li>pgvector</li><li>Reranking</li><li>Citations</li></ul>
-          <a class="link-arrow proj__link" href="#" aria-label="View project (placeholder)">View <span aria-hidden="true">&#8594;</span></a>
+          <ul class="proj__tags"><li>LangGraph</li><li>Text2SQL</li><li>BigQuery</li><li>MCP</li></ul>
         </article>
 
         <article class="proj proj--point reveal" style="--i:2">
           <span class="proj__num" aria-hidden="true">03</span>
-          <h3 class="proj__title">Eval harness for agents</h3>
+          <h3 class="proj__title">FPT Maya</h3>
           <p class="proj__body">
-            A test suite that scores agent runs on task success, tool accuracy and
-            cost &mdash; turning &ldquo;it felt better&rdquo; into a number you can
-            regress against on every change.
+            The AI assistant FPT employees reach for every day &mdash; it answers policy
+            questions, handles leave, WFH and room bookings, and files reports from voice
+            notes. RAG for knowledge, a DistilBERT router for intent, agents for the doing.
           </p>
-          <ul class="proj__tags"><li>Python</li><li>LLM-as-judge</li><li>CI</li></ul>
-          <a class="link-arrow proj__link" href="#" aria-label="View project (placeholder)">View <span aria-hidden="true">&#8594;</span></a>
+          <ul class="proj__tags"><li>RAG</li><li>LangGraph</li><li>DistilBERT</li><li>Voice agent</li></ul>
         </article>
       </div>
     </section>
@@ -256,7 +253,7 @@
     </section>
 
     <!-- ─── Stack · tabular spec sheet ─── -->
-    <!-- PLACEHOLDER: trim / edit the stack to match what you actually use -->
+    <!-- Stack · real, from CV -->
     <section class="stack" id="stack" aria-labelledby="stack-title">
       <header class="sec-head">
         <p class="eyebrow reveal" style="--i:0">Stack</p>
@@ -264,11 +261,12 @@
       </header>
 
       <dl class="specsheet">
-        <div class="spec-row reveal" style="--i:0"><dt class="spec-key">Languages</dt><dd class="spec-val">Python · TypeScript · Go</dd></div>
-        <div class="spec-row reveal" style="--i:1"><dt class="spec-key">Agents &amp; LLM</dt><dd class="spec-val">LangGraph · LangChain · OpenAI &amp; Anthropic APIs · function calling · MCP</dd></div>
-        <div class="spec-row reveal" style="--i:2"><dt class="spec-key">Retrieval</dt><dd class="spec-val">RAG · pgvector · Pinecone · rerankers · hybrid search</dd></div>
-        <div class="spec-row reveal" style="--i:3"><dt class="spec-key">ML</dt><dd class="spec-val">PyTorch · Hugging Face · fine-tuning · evaluation</dd></div>
-        <div class="spec-row reveal" style="--i:4"><dt class="spec-key">Infra</dt><dd class="spec-val">FastAPI · Docker · AWS · GCP · Postgres · Redis</dd></div>
+        <div class="spec-row reveal" style="--i:0"><dt class="spec-key">Languages</dt><dd class="spec-val">Python · C / C++</dd></div>
+        <div class="spec-row reveal" style="--i:1"><dt class="spec-key">Agents &amp; LLM</dt><dd class="spec-val">LangGraph · LangChain · Azure OpenAI · MCP / FastMCP · RAG · function calling</dd></div>
+        <div class="spec-row reveal" style="--i:2"><dt class="spec-key">Retrieval</dt><dd class="spec-val">Qdrant · LlamaIndex · vector DBs · embedding fine-tune (LoRA / QLoRA) · MTEB</dd></div>
+        <div class="spec-row reveal" style="--i:3"><dt class="spec-key">ML &amp; CV</dt><dd class="spec-val">PyTorch · TensorFlow · Keras · OpenCV · Triton · ONNX · TensorRT · quantization</dd></div>
+        <div class="spec-row reveal" style="--i:4"><dt class="spec-key">MLOps &amp; Cloud</dt><dd class="spec-val">Docker · Kubernetes · AWS (SageMaker, S3) · Azure (APIM, CosmosDB) · Kafka · RabbitMQ · Redis · MLflow</dd></div>
+        <div class="spec-row reveal" style="--i:5"><dt class="spec-key">Evaluation</dt><dd class="spec-val">Automated online eval · LLM-as-judge · offline benchmarks</dd></div>
       </dl>
     </section>
 
@@ -279,9 +277,9 @@
     <p class="eyebrow reveal" style="--i:0">Contact</p>
     <p class="foot-stmt__line reveal" style="--i:1">Got an agent that needs to actually ship? Let&rsquo;s talk.</p>
     <div class="foot-stmt__cta reveal" style="--i:2">
-      <a class="btn btn--solid btn--lg" href="mailto:b.vinhhongduc22@gmail.com">Email me</a>
+      <a class="btn btn--solid btn--lg" href="mailto:duc.bvh22@gmail.com">Email me</a>
       <!-- PLACEHOLDER: replace # with your real GitHub / LinkedIn URLs -->
-      <a class="link-arrow" href="#" aria-label="GitHub (placeholder)">GitHub <span aria-hidden="true">&#8599;</span></a>
+      <a class="link-arrow" href="https://github.com/ducbvh" target="_blank" rel="noopener">GitHub <span aria-hidden="true">&#8599;</span></a>
       <a class="link-arrow" href="https://www.linkedin.com/in/duchong/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&#8599;</span></a>
     </div>
     <div class="foot-stmt__meta reveal" style="--i:3">
