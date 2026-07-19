@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>RAG that cites its sources, or it doesn't ship — Duke</title>
+  <meta name="description" content="Why every retrieval answer should carry a citation back to the source chunk — auditable, not just plausible." />
+  <meta name="color-scheme" content="light dark" />
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../tokens.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="../index.html" aria-label="Duke — home"><span class="brand-mark" aria-hidden="true"></span>Duke</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../blog.html" aria-current="page">Blog</a>
+        <a href="../index.html#stack">Stack</a>
+      </nav>
+      <div class="nav__right">
+        <button class="themebtn" type="button" id="theme-toggle" aria-label="Toggle light / dark" aria-pressed="false">
+          <span class="themebtn__ico themebtn__ico--sun" aria-hidden="true">☀</span>
+          <span class="themebtn__ico themebtn__ico--moon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn--solid" href="../index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <a class="backlink" href="../blog.html">&#8592; All posts</a>
+      <!-- PLACEHOLDER: sample article — replace with your own writing -->
+      <p class="article__meta">2026 &middot; 03 &mdash; 4 min read</p>
+      <h1 class="article__title">RAG that cites its sources, or it doesn&rsquo;t ship</h1>
+
+      <div class="prose">
+        <p>A retrieval answer without a citation is a confident guess. If a user can&rsquo;t trace a claim back to the chunk it came from, you can&rsquo;t either &mdash; and neither can the eval.</p>
+
+        <h2>Carry the source through</h2>
+        <p>Every chunk keeps its identity from ingestion to answer: a stable <code>chunk_id</code>, its document, and a span. The model is asked to attach those ids to each claim, and the UI turns them into links.</p>
+        <pre><code>{
+  "claim": "The retry budget defaults to 3.",
+  "source": "docs/agents.md#L82",
+  "score": 0.91
+}</code></pre>
+
+        <h2>Refuse when there&rsquo;s nothing to cite</h2>
+        <ul>
+          <li>Below a retrieval-score floor, say &ldquo;I don&rsquo;t have a source for that.&rdquo;</li>
+          <li>Never let the model paper over a gap with fluent prose.</li>
+          <li>Log the misses &mdash; they&rsquo;re your content backlog.</li>
+        </ul>
+
+        <blockquote>Auditable beats plausible. A cited &ldquo;I&rsquo;m not sure&rdquo; is worth more than an uncited certainty.</blockquote>
+
+        <p>Citations aren&rsquo;t a nice-to-have bolted on at the end. They&rsquo;re the difference between a demo and something a team will actually trust.</p>
+      </div>
+
+      <div class="article__foot">
+        <a class="backlink" href="../blog.html">&#8592; All posts</a>
+        <a class="link-arrow" href="mailto:b.vinhhongduc22@gmail.com">Reply by email <span aria-hidden="true">&#8594;</span></a>
+      </div>
+    </article>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

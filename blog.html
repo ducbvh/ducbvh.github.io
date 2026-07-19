@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Blog — Duke (Hong Duc Bui Vinh)</title>
+  <meta name="description" content="Notes on building reliable agents and AI assistant systems." />
+  <meta name="color-scheme" content="light dark" />
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Duke — home"><span class="brand-mark" aria-hidden="true"></span>Duke</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="index.html#stack">Stack</a>
+      </nav>
+      <div class="nav__right">
+        <button class="themebtn" type="button" id="theme-toggle" aria-label="Toggle light / dark" aria-pressed="false">
+          <span class="themebtn__ico themebtn__ico--sun" aria-hidden="true">☀</span>
+          <span class="themebtn__ico themebtn__ico--moon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn--solid" href="index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page blog-head">
+      <a class="backlink" href="index.html">&#8592; Back home</a>
+      <p class="blog-head__eyebrow eyebrow" style="margin-top:1.5rem">Writing</p>
+      <h1>Notes on building agents.</h1>
+      <p>Short, practical pieces on shipping agents and AI assistants that hold up in production &mdash; reliability, evaluation, and the plumbing around them.</p>
+    </section>
+
+    <!-- PLACEHOLDER: sample posts — edit / add your own here and in posts/ -->
+    <section class="page">
+      <ul class="postlist postlist--full">
+        <li class="post-row">
+          <a class="post-link" href="posts/reliable-agents.html">
+            <span class="post-date">2026 &middot; 07</span>
+            <span class="post-title">Making agents reliable: the loop beats the prompt</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+        <li class="post-row">
+          <a class="post-link" href="posts/eval-first.html">
+            <span class="post-date">2026 &middot; 05</span>
+            <span class="post-title">Eval-first: why every agent I ship gets a scorecard</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+        <li class="post-row">
+          <a class="post-link" href="posts/rag-that-cites.html">
+            <span class="post-date">2026 &middot; 03</span>
+            <span class="post-title">RAG that cites its sources, or it doesn&rsquo;t ship</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot-stmt" id="contact">
+    <p class="eyebrow">Contact</p>
+    <p class="foot-stmt__line">Got an agent that needs to actually ship? Let&rsquo;s talk.</p>
+    <div class="foot-stmt__cta">
+      <a class="btn btn--solid btn--lg" href="mailto:b.vinhhongduc22@gmail.com">Email me</a>
+      <a class="link-arrow" href="#" aria-label="GitHub (placeholder)">GitHub <span aria-hidden="true">&#8599;</span></a>
+      <a class="link-arrow" href="https://www.linkedin.com/in/duchong/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+    </div>
+    <div class="foot-stmt__meta">
+      <span class="wordmark"><span class="brand-mark" aria-hidden="true"></span>Duke · Hong Duc Bui Vinh</span>
+      <code class="foot-stmt__ver">Agentic AI Engineer</code>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Eval-first: why every agent I ship gets a scorecard — Duke</title>
+  <meta name="description" content="Turning 'it felt better' into a number you can regress against — the eval-first way to build agents." />
+  <meta name="color-scheme" content="light dark" />
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../tokens.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="../index.html" aria-label="Duke — home"><span class="brand-mark" aria-hidden="true"></span>Duke</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../blog.html" aria-current="page">Blog</a>
+        <a href="../index.html#stack">Stack</a>
+      </nav>
+      <div class="nav__right">
+        <button class="themebtn" type="button" id="theme-toggle" aria-label="Toggle light / dark" aria-pressed="false">
+          <span class="themebtn__ico themebtn__ico--sun" aria-hidden="true">☀</span>
+          <span class="themebtn__ico themebtn__ico--moon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn--solid" href="../index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <a class="backlink" href="../blog.html">&#8592; All posts</a>
+      <!-- PLACEHOLDER: sample article — replace with your own writing -->
+      <p class="article__meta">2026 &middot; 05 &mdash; 5 min read</p>
+      <h1 class="article__title">Eval-first: why every agent I ship gets a scorecard</h1>
+
+      <div class="prose">
+        <p>&ldquo;It feels better&rdquo; is not a merge criterion. The first thing I build for an agent isn&rsquo;t the agent &mdash; it&rsquo;s the way I&rsquo;ll know whether a change made it better or worse.</p>
+
+        <h2>Start with a tiny set</h2>
+        <p>Twenty realistic tasks with known-good outcomes beat a thousand synthetic ones. Pull them from real usage the moment you have any, and keep the hard cases you almost got wrong.</p>
+
+        <h2>Score what matters</h2>
+        <ul>
+          <li><strong>Task success</strong> &mdash; did it actually do the thing?</li>
+          <li><strong>Tool accuracy</strong> &mdash; right tool, right arguments, no thrash.</li>
+          <li><strong>Cost</strong> &mdash; tokens and latency per task, because that ships too.</li>
+        </ul>
+
+        <blockquote>No number, no merge. The scorecard is the contract between &ldquo;I changed a prompt&rdquo; and &ldquo;it&rsquo;s allowed to reach users.&rdquo;</blockquote>
+
+        <h2>Run it on every change</h2>
+        <p>Wire the eval into CI so a regression fails the build the same way a broken test would. An LLM-as-judge is fine for the fuzzy parts, as long as you&rsquo;ve checked the judge against your own labels first.</p>
+
+        <p>Eval-first is slower on day one and much faster by week three, because you stop guessing.</p>
+      </div>
+
+      <div class="article__foot">
+        <a class="backlink" href="../blog.html">&#8592; All posts</a>
+        <a class="link-arrow" href="mailto:b.vinhhongduc22@gmail.com">Reply by email <span aria-hidden="true">&#8594;</span></a>
+      </div>
+    </article>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

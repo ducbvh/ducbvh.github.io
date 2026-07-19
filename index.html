@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Duke (Hong Duc Bui Vinh) — Agentic AI Engineer</title>
+  <meta name="description" content="Agentic AI Engineer building agents and AI assistant systems. Previously at FPT Software and MoMo." />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- set theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ─── Nav · austere bar · hairline under · theme toggle + ⌘K + CTA ─── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#" aria-label="Duke — home"><span class="brand-mark" aria-hidden="true"></span>Duke</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="#stack">Stack</a>
+      </nav>
+
+      <div class="nav__right">
+        <button class="themebtn" type="button" id="theme-toggle" aria-label="Toggle light / dark" aria-pressed="false">
+          <span class="themebtn__ico themebtn__ico--sun" aria-hidden="true">☀</span>
+          <span class="themebtn__ico themebtn__ico--moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="cmdk" type="button" id="cmdk-trigger" aria-label="Open command palette" aria-keyshortcuts="Meta+K Control+K" aria-haspopup="dialog" aria-expanded="false" aria-controls="palette">
+          <span class="cmdk__label">Jump to…</span>
+          <kbd class="cmdk__keys"><span>&#8984;</span>K</kbd>
+        </button>
+        <a class="btn btn--solid" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ─── Hero · Manifesto · big statement + hairline index row (ref: dark portfolio cover) ─── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <p class="hero__eyebrow reveal" style="--i:0">Agentic AI Engineer</p>
+      <h1 class="hero__title reveal" id="hero-title" style="--i:1">
+        Survival of the<br />fittest agent.
+      </h1>
+      <p class="hero__lede reveal" style="--i:2">
+        I design autonomous AI agents &mdash; systems that plan, act, and get better
+        with every iteration. Each version is measured against the last; only the
+        strongest ship.
+      </p>
+
+      <!-- Darwin epigraph — selection pressure = evaluation -->
+      <figure class="epigraph reveal" style="--i:3">
+        <blockquote>&ldquo;Multiply, vary, let the strongest live and the weakest die.&rdquo;</blockquote>
+        <figcaption>Charles Darwin &middot; On the Origin of Species</figcaption>
+      </figure>
+
+      <!-- hairline index row — the austere-cover signature -->
+      <dl class="index-row reveal" style="--i:4">
+        <div class="index-cell">
+          <dt>Name</dt>
+          <dd>Hong Duc Bui Vinh<span class="index-sub">&ldquo;Duke&rdquo;</span></dd>
+        </div>
+        <div class="index-cell">
+          <dt>Role</dt>
+          <dd>Agentic AI Engineer</dd>
+        </div>
+        <div class="index-cell">
+          <dt>Based</dt>
+          <dd>Vietnam &middot; Remote</dd>
+        </div>
+        <div class="index-cell">
+          <dt>Status</dt>
+          <dd><span class="dot-live" aria-hidden="true"></span>Open to work</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ─── Now / Previously strip · thin hairline band · email quick-copy + real companies ─── -->
+    <section class="strip" aria-label="Availability and background">
+      <div class="strip__install reveal" style="--i:0">
+        <span class="strip__label">Reach me</span>
+        <code class="strip__cmd">b.vinhhongduc22@gmail.com</code>
+        <button class="strip__copy" type="button" aria-label="Copy email address">Copy</button>
+      </div>
+      <div class="strip__trust reveal" style="--i:1">
+        <span class="strip__label">Previously at</span>
+        <ul class="trust">
+          <li>FPT Software</li>
+          <li>MoMo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Experience · hairline timeline · FPT Software + MoMo ─── -->
+    <!-- PLACEHOLDER: roles, dates and bullets below are invented — replace with your real history -->
+    <section class="exp" id="experience" aria-labelledby="exp-title">
+      <header class="sec-head">
+        <p class="eyebrow reveal" style="--i:0">Experience</p>
+        <h2 class="sec-title reveal" id="exp-title" style="--i:1">Where I&rsquo;ve shipped.</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl-item reveal" style="--i:0">
+          <div class="tl-when">
+            <span class="tl-years">2023 &mdash; Now</span>
+            <span class="tl-place">MoMo</span>
+          </div>
+          <div class="tl-what">
+            <h3 class="tl-role">AI Engineer <span class="tl-role-note">/ placeholder title</span></h3>
+            <p class="tl-body">
+              Built LLM-powered assistant features and agentic workflows for a
+              super-app serving millions of users &mdash; retrieval, tool orchestration,
+              and evaluation harnesses.
+            </p>
+            <ul class="tl-list">
+              <li>Shipped an in-app assistant with tool use over internal APIs</li>
+              <li>Stood up a RAG pipeline + eval loop for answer quality</li>
+              <li>Cut manual support triage time <span class="tl-metric">by ~40%</span> <span class="tl-metric-note">(metric to confirm)</span></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal" style="--i:1">
+          <div class="tl-when">
+            <span class="tl-years">2021 &mdash; 2023</span>
+            <span class="tl-place">FPT Software</span>
+          </div>
+          <div class="tl-what">
+            <h3 class="tl-role">Software / ML Engineer <span class="tl-role-note">/ placeholder title</span></h3>
+            <p class="tl-body">
+              Delivered ML and backend systems for enterprise clients &mdash; data
+              pipelines, model serving, and the services around them.
+            </p>
+            <ul class="tl-list">
+              <li>Built and deployed ML services behind production APIs</li>
+              <li>Owned data pipelines from ingestion to feature store</li>
+              <li>Collaborated across time zones with global client teams</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ─── Selected work · asymmetric grid — one wide flagship + two compact ─── -->
+    <!-- PLACEHOLDER: all three projects are invented — replace names, descriptions, links, metrics -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <header class="sec-head">
+        <p class="eyebrow reveal" style="--i:0">Selected work</p>
+        <h2 class="sec-title reveal" id="work-title" style="--i:1">Agents, assistants, and the plumbing behind them.</h2>
+        <p class="sec-lede reveal" style="--i:2">
+          A few things I&rsquo;ve built. Each one is a real system with a job to do &mdash;
+          not a notebook that only runs once.
+        </p>
+      </header>
+
+      <div class="work__grid">
+        <article class="proj proj--wide reveal" style="--i:0">
+          <span class="proj__num" aria-hidden="true">01</span>
+          <div class="proj__text">
+            <p class="proj__kicker">Flagship &middot; agent platform</p>
+            <h3 class="proj__title">Autonomous task agent</h3>
+            <p class="proj__body">
+              A planning-and-tool-use agent that turns a plain-language task into a
+              sequence of tool calls, checks its own output, and reports back with a
+              full run trace. Built for reliability: retries, guardrails, and eval
+              gates before anything ships.
+            </p>
+            <ul class="proj__tags">
+              <li>LangGraph</li><li>Tool use</li><li>RAG</li><li>Evals</li>
+            </ul>
+            <a class="link-arrow proj__link" href="#" aria-label="Read the case study (placeholder)">Case study <span aria-hidden="true">&#8594;</span></a>
+          </div>
+        </article>
+
+        <article class="proj proj--point reveal" style="--i:1">
+          <span class="proj__num" aria-hidden="true">02</span>
+          <h3 class="proj__title">Docs assistant with citations</h3>
+          <p class="proj__body">
+            A retrieval assistant that answers from a private knowledge base and
+            cites every claim back to the source chunk &mdash; auditable, not just
+            plausible.
+          </p>
+          <ul class="proj__tags"><li>pgvector</li><li>Reranking</li><li>Citations</li></ul>
+          <a class="link-arrow proj__link" href="#" aria-label="View project (placeholder)">View <span aria-hidden="true">&#8594;</span></a>
+        </article>
+
+        <article class="proj proj--point reveal" style="--i:2">
+          <span class="proj__num" aria-hidden="true">03</span>
+          <h3 class="proj__title">Eval harness for agents</h3>
+          <p class="proj__body">
+            A test suite that scores agent runs on task success, tool accuracy and
+            cost &mdash; turning &ldquo;it felt better&rdquo; into a number you can
+            regress against on every change.
+          </p>
+          <ul class="proj__tags"><li>Python</li><li>LLM-as-judge</li><li>CI</li></ul>
+          <a class="link-arrow proj__link" href="#" aria-label="View project (placeholder)">View <span aria-hidden="true">&#8594;</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ─── Blog teaser · latest writing · links to blog.html ─── -->
+    <!-- PLACEHOLDER: posts are samples — edit titles/dates or add real ones in blog.html + posts/ -->
+    <section class="writing" id="writing" aria-labelledby="writing-title">
+      <header class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal" style="--i:0">Writing</p>
+          <h2 class="sec-title reveal" id="writing-title" style="--i:1">Notes on building agents.</h2>
+        </div>
+        <a class="link-arrow reveal" style="--i:2" href="blog.html">All posts <span aria-hidden="true">&#8594;</span></a>
+      </header>
+
+      <ul class="postlist">
+        <li class="post-row reveal" style="--i:0">
+          <a class="post-link" href="posts/reliable-agents.html">
+            <span class="post-date">2026 &middot; 07</span>
+            <span class="post-title">Making agents reliable: the loop beats the prompt</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+        <li class="post-row reveal" style="--i:1">
+          <a class="post-link" href="posts/eval-first.html">
+            <span class="post-date">2026 &middot; 05</span>
+            <span class="post-title">Eval-first: why every agent I ship gets a scorecard</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+        <li class="post-row reveal" style="--i:2">
+          <a class="post-link" href="posts/rag-that-cites.html">
+            <span class="post-date">2026 &middot; 03</span>
+            <span class="post-title">RAG that cites its sources, or it doesn&rsquo;t ship</span>
+            <span class="post-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ─── Stack · tabular spec sheet ─── -->
+    <!-- PLACEHOLDER: trim / edit the stack to match what you actually use -->
+    <section class="stack" id="stack" aria-labelledby="stack-title">
+      <header class="sec-head">
+        <p class="eyebrow reveal" style="--i:0">Stack</p>
+        <h2 class="sec-title reveal" id="stack-title" style="--i:1">What I reach for.</h2>
+      </header>
+
+      <dl class="specsheet">
+        <div class="spec-row reveal" style="--i:0"><dt class="spec-key">Languages</dt><dd class="spec-val">Python · TypeScript · Go</dd></div>
+        <div class="spec-row reveal" style="--i:1"><dt class="spec-key">Agents &amp; LLM</dt><dd class="spec-val">LangGraph · LangChain · OpenAI &amp; Anthropic APIs · function calling · MCP</dd></div>
+        <div class="spec-row reveal" style="--i:2"><dt class="spec-key">Retrieval</dt><dd class="spec-val">RAG · pgvector · Pinecone · rerankers · hybrid search</dd></div>
+        <div class="spec-row reveal" style="--i:3"><dt class="spec-key">ML</dt><dd class="spec-val">PyTorch · Hugging Face · fine-tuning · evaluation</dd></div>
+        <div class="spec-row reveal" style="--i:4"><dt class="spec-key">Infra</dt><dd class="spec-val">FastAPI · Docker · AWS · GCP · Postgres · Redis</dd></div>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- ─── Contact / Footer · Ft5 Statement ─── -->
+  <footer class="foot-stmt" id="contact">
+    <p class="eyebrow reveal" style="--i:0">Contact</p>
+    <p class="foot-stmt__line reveal" style="--i:1">Got an agent that needs to actually ship? Let&rsquo;s talk.</p>
+    <div class="foot-stmt__cta reveal" style="--i:2">
+      <a class="btn btn--solid btn--lg" href="mailto:b.vinhhongduc22@gmail.com">Email me</a>
+      <!-- PLACEHOLDER: replace # with your real GitHub / LinkedIn URLs -->
+      <a class="link-arrow" href="#" aria-label="GitHub (placeholder)">GitHub <span aria-hidden="true">&#8599;</span></a>
+      <a class="link-arrow" href="https://www.linkedin.com/in/duchong/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+    </div>
+    <div class="foot-stmt__meta reveal" style="--i:3">
+      <span class="wordmark"><span class="brand-mark" aria-hidden="true"></span>Duke · Hong Duc Bui Vinh</span>
+      <code class="foot-stmt__ver">Agentic AI Engineer</code>
+    </div>
+  </footer>
+
+  <!-- ─── Command palette · ⌘K / Ctrl+K ─── -->
+  <div class="palette" id="palette" hidden>
+    <div class="palette__backdrop" data-palette-close></div>
+    <div class="palette__panel" role="dialog" aria-modal="true" aria-labelledby="palette-label">
+      <h2 class="palette__label" id="palette-label">Jump to a section</h2>
+      <div class="palette__field">
+        <span class="palette__prompt" aria-hidden="true">&#8250;</span>
+        <input class="palette__input" id="palette-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Jump to a section…" aria-label="Search sections" aria-controls="palette-list" />
+      </div>
+      <ul class="palette__list" id="palette-list" role="listbox" aria-label="Sections">
+        <li class="palette__row" role="option" id="cmd-0" data-cmd="work" aria-selected="true"><span class="palette__row-label">Selected work</span><span class="palette__row-hint">projects</span></li>
+        <li class="palette__row" role="option" id="cmd-1" data-cmd="experience" aria-selected="false"><span class="palette__row-label">Experience</span><span class="palette__row-hint">MoMo · FPT</span></li>
+        <li class="palette__row" role="option" id="cmd-2" data-cmd="blog" aria-selected="false"><span class="palette__row-label">Blog</span><span class="palette__row-hint">writing</span></li>
+        <li class="palette__row" role="option" id="cmd-3" data-cmd="stack" aria-selected="false"><span class="palette__row-label">Stack</span><span class="palette__row-hint">tools</span></li>
+        <li class="palette__row" role="option" id="cmd-4" data-cmd="theme" aria-selected="false"><span class="palette__row-label">Toggle light / dark</span><span class="palette__row-hint">theme</span></li>
+        <li class="palette__row" role="option" id="cmd-5" data-cmd="email" aria-selected="false"><span class="palette__row-label">Email me</span><span class="palette__row-hint">say hi</span></li>
+        <li class="palette__row" role="option" id="cmd-6" data-cmd="copy" aria-selected="false"><span class="palette__row-label">Copy email address</span><span class="palette__row-hint">clipboard</span></li>
+      </ul>
+      <p class="palette__foot" aria-hidden="true"><kbd>&#8593;</kbd><kbd>&#8595;</kbd> navigate <kbd>&#8629;</kbd> select <kbd>esc</kbd> close</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

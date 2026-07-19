@@ -1,0 +1,116 @@
+/* Hallmark · theme: custom-monochrome · design tokens
+   Austere editorial portfolio — pure black & white (achromatic, chroma 0).
+   No accent hue; hairlines + weight + inversion do all the work.
+   Two modes: [data-theme="light"] and [data-theme="dark"] (system default). */
+
+:root {
+  /* ─── Type ───────────────────────────────────────────────── */
+  --font-display: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* fluid scale — statement display runs large for the austere fold */
+  --step-mega:    clamp(3rem, 10vw, 9rem);
+  --step-hero:    clamp(2.6rem, 6vw + 0.5rem, 6rem);
+  --step-section: clamp(1.9rem, 3.2vw, 3rem);
+  --step-lede:    clamp(1.0625rem, 0.8vw + 0.7rem, 1.3125rem);
+  --step-body:    1.0625rem;
+  --step-small:   0.75rem;                 /* mono labels / eyebrows */
+
+  --tracking-display: -0.035em;
+  --tracking-snug:    -0.015em;
+  --tracking-label:   0.14em;              /* mono uppercase labels — wide, editorial */
+
+  --weight-body:    400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+  --weight-bold:    700;
+
+  --leading-tight:  0.98;
+  --leading-snug:   1.14;
+  --leading-body:   1.62;
+  --measure:        62ch;
+
+  /* ─── Space & layout ─────────────────────────────────────── */
+  --gutter:     clamp(1.1rem, 4vw, 3.5rem);
+  --maxw:       1240px;
+  --section-y:  clamp(4.5rem, 9vw, 8rem);
+  --rule:       1px;
+
+  /* ─── Shape ──────────────────────────────────────────────── */
+  --radius-btn:  4px;
+  --radius-card: 6px;
+
+  /* ─── Motion ─────────────────────────────────────────────── */
+  --reveal-dist: 12px;
+  --reveal-dur:  650ms;
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --t-quiet:     260ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-theme:     360ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── LIGHT (default) ────────────────────────────────────────
+   Near-white paper, near-black ink. Never pure #fff / #000. */
+:root,
+[data-theme="light"] {
+  --color-paper:   oklch(98%  0 0);   /* page ground */
+  --color-paper-2: oklch(95.5% 0 0);  /* alt band / quiet inset */
+  --color-paper-3: oklch(92%  0 0);   /* chip / tag ground */
+
+  --color-ink:     oklch(17%  0 0);   /* headlines + wordmark — near-black */
+  --color-ink-2:   oklch(32%  0 0);   /* body copy */
+  --color-muted:   oklch(52%  0 0);   /* captions, meta */
+
+  --color-rule:    oklch(87%  0 0);   /* hairlines */
+  --color-rule-2:  oklch(76%  0 0);   /* stronger hairline / hover */
+
+  /* inverted block (buttons, code card) = ink ground, paper text */
+  --color-inv-bg:   oklch(17% 0 0);
+  --color-inv-bg-2: oklch(24% 0 0);   /* window bar / inset on the inverted block */
+  --color-inv-ink:  oklch(97% 0 0);
+  --color-inv-ink-2:oklch(72% 0 0);
+  --color-inv-rule: oklch(34% 0 0);
+}
+
+/* ─── DARK ───────────────────────────────────────────────────
+   Charcoal ground, near-white ink — the reference cover look. */
+[data-theme="dark"] {
+  --color-paper:   oklch(16%  0 0);
+  --color-paper-2: oklch(20%  0 0);
+  --color-paper-3: oklch(25%  0 0);
+
+  --color-ink:     oklch(97%  0 0);
+  --color-ink-2:   oklch(82%  0 0);
+  --color-muted:   oklch(62%  0 0);
+
+  --color-rule:    oklch(30%  0 0);
+  --color-rule-2:  oklch(42%  0 0);
+
+  --color-inv-bg:   oklch(96% 0 0);
+  --color-inv-bg-2: oklch(88% 0 0);
+  --color-inv-ink:  oklch(16% 0 0);
+  --color-inv-ink-2:oklch(38% 0 0);
+  --color-inv-rule: oklch(78% 0 0);
+}
+
+/* System preference wins when the user hasn't chosen a mode explicitly */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper:   oklch(16%  0 0);
+    --color-paper-2: oklch(20%  0 0);
+    --color-paper-3: oklch(25%  0 0);
+
+    --color-ink:     oklch(97%  0 0);
+    --color-ink-2:   oklch(82%  0 0);
+    --color-muted:   oklch(62%  0 0);
+
+    --color-rule:    oklch(30%  0 0);
+    --color-rule-2:  oklch(42%  0 0);
+
+    --color-inv-bg:   oklch(96% 0 0);
+    --color-inv-bg-2: oklch(88% 0 0);
+    --color-inv-ink:  oklch(16% 0 0);
+    --color-inv-ink-2:oklch(38% 0 0);
+    --color-inv-rule: oklch(78% 0 0);
+  }
+}

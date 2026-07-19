@@ -1,0 +1,4 @@
+[
+  { "date": "2026-07-14", "macrostructure": "Manifesto", "theme": "custom-monochrome", "theme_axes": "dual light+dark / display-heavy grotesk / achromatic (no accent)", "enrichment": "none", "nav": "bar + theme-toggle + ⌘K", "footer": "Ft5", "brief": "Duke · Agentic AI Engineer · redesign to austere black&white portfolio + light/dark toggle + blog", "vibe": "austere monochrome editorial portfolio cover" },
+  { "date": "2026-07-14", "macrostructure": "Marquee Hero", "theme": "Cobalt", "enrichment": "none", "nav": "N13", "footer": "Ft5", "brief": "Duke (Hong Duc Bui Vinh) · Agentic AI Engineer portfolio · first build (superseded by monochrome redesign)" }
+]
