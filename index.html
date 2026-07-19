@@ -149,12 +149,13 @@
           <div class="tl-what">
             <h3 class="tl-role">AI Engineer</h3>
             <p class="tl-body">
-              Built enterprise LLM agents and assistants for e-commerce analytics and
-              internal productivity.
+              Built enterprise LLM agents, assistants and computer-vision systems &mdash;
+              from conversational analytics to real-time video.
             </p>
             <ul class="tl-list">
               <li><strong>Intelligent Data Assistant</strong> &mdash; a multi-agent analytics platform (Text2SQL, Data-Insight, Text2Chart) over BigQuery, orchestrated with LangGraph and a GitLab MCP integration</li>
               <li><strong>FPT Maya</strong> &mdash; a company-wide AI assistant on Teams &amp; Workplace: answers from internal docs &amp; policies, routes requests with a DistilBERT classifier, and turns voice notes into finished reports</li>
+              <li><strong>Multi-camera license-plate recognition</strong> &mdash; a real-time vision system (RT-DETR + PaddleOCR + ByteTrack) reading plates across 7&ndash;10 camera streams on a single server via NVIDIA DeepStream + Triton</li>
               <li>Banking training assistant &mdash; cut serving latency <span class="tl-metric">50%</span> (3s &rarr; 1.5s)</li>
             </ul>
           </div>
@@ -167,7 +168,7 @@
     <section class="work" id="work" aria-labelledby="work-title">
       <header class="sec-head">
         <p class="eyebrow reveal" style="--i:0">Selected work</p>
-        <h2 class="sec-title reveal" id="work-title" style="--i:1">Agents and assistants, shipped to production.</h2>
+        <h2 class="sec-title reveal" id="work-title" style="--i:1">Agents, assistants, and vision &mdash; in production.</h2>
         <p class="sec-lede reveal" style="--i:2">
           Systems built at MoMo and FPT &mdash; used by real people at scale, not demos
           that only run once.
@@ -212,6 +213,17 @@
             notes. RAG for knowledge, a DistilBERT router for intent, agents for the doing.
           </p>
           <ul class="proj__tags"><li>RAG</li><li>LangGraph</li><li>DistilBERT</li><li>Voice agent</li></ul>
+        </article>
+
+        <article class="proj proj--point reveal" style="--i:3">
+          <span class="proj__num" aria-hidden="true">04</span>
+          <h3 class="proj__title">Multi-camera plate recognition</h3>
+          <p class="proj__body">
+            A real-time smart-parking vision system for Japanese lots &mdash; detecting and
+            reading license plates across <strong>7&ndash;10 camera streams on one server</strong>.
+            RT-DETR + PaddleOCR + ByteTrack, served with NVIDIA DeepStream and Triton.
+          </p>
+          <ul class="proj__tags"><li>RT-DETR</li><li>PaddleOCR</li><li>ByteTrack</li><li>DeepStream</li><li>Triton</li></ul>
         </article>
       </div>
     </section>
